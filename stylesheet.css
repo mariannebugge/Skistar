@@ -1,0 +1,331 @@
+body {
+  background-color: rgb(222, 239, 248);
+  font-family: Poppins Medium;
+  padding-left: 20px;
+}
+
+.logo img{
+  width: 70%;
+  height: auto;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 08fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+  grid-gap: 0.7rem;
+  grid-template-areas:
+    "logo logo logo logo"
+    "header header header header"
+    "nav img-hafjell box-hafjell box-hafjell"
+    "nav img-hemsedal box-hemsedal box-hemsedal"
+    "nav img-trysil box-trysil box-trysil"
+    "nav img-tryvann box-tryvann box-tryvann"
+    "footer footer footer footer"
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: -10px;
+  margin-top: 0px;
+  color: darkred;
+}
+
+.intro {
+  font-size: 15px;
+  line-height: 25px;
+  padding-top: 10px;
+}
+
+
+h2 {
+  margin-top: 0px;
+  font-size: 35px;
+  margin-bottom: 0px;
+
+}
+
+.about {
+  font-family: helvetica;
+  font-weight: 200;
+  line-height: 25px;
+  padding-right: 40px;
+}
+
+#nav {
+  grid-area: nav;
+  margin-top: 30px;
+  padding-right: 0px;
+}
+
+#nav a{
+  display: block;
+  font-size: 23px;
+  line-height: 40px;
+  text-decoration: none;
+  color: black;
+}
+
+#nav a:hover {
+  font-weight: bolder;
+  color: darkred;
+}
+
+#header {
+  grid-area: header;
+  text-align: center;
+  line-height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+}
+
+#img-hafjell {
+  grid-area: img-hafjell;
+}
+
+#img-hafjell:hover {
+  opacity: 0.7;
+}
+
+#img-hafjell img{
+  width: 450px;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#box-hafjell{
+  background-color: rgb(42, 45, 47);
+  grid-area: box-hafjell;
+  padding-left: 30px;
+  padding-top: -10px;
+  width: 420px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 56px;
+
+}
+
+#img-hemsedal {
+  grid-area: img-hemsedal;
+}
+
+#img-hemsedal img{
+  width: 450px;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#img-hemsedal:hover {
+  opacity: 0.7;
+}
+
+#box-hemsedal{
+  background-color: rgb(42, 45, 47);
+  grid-area: box-hemsedal;
+  padding-left: 30px;
+  width: 420px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 56px;
+}
+
+#img-trysil {
+  grid-area: img-trysil;
+
+}
+
+#img-trysil img{
+  width: 450px;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#img-trysil:hover {
+  opacity: 0.7;
+}
+
+#box-trysil{
+  background: rgb(42, 45, 47);
+  grid-area: box-trysil;
+  padding-left: 30px;
+  width: 420px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 56px;
+}
+
+#img-tryvann {
+  grid-area: img-tryvann;
+}
+
+#img-tryvann:hover {
+  opacity: 0.7;
+}
+
+#img-tryvann img{
+  width: 450px;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#box-tryvann{
+  background: rgb(42, 45, 47);
+  grid-area: box-tryvann;
+  padding-left: 30px;
+  width: 420px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 56px;
+}
+
+.read-more {
+  padding-right: 40px;
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+
+.read-more a{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.read-more a:hover {
+  text-decoration: underline;
+}
+
+.vei-yr .img{
+  width: 80px;
+  height: auto;
+}
+
+.vei{
+  display: flex;
+  background-color: rgb(207, 248, 218);
+  height: 50px;
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 43px;
+  padding-right: 43px;
+  float: left;
+}
+
+.vei:hover {
+  opacity: 0.7;
+}
+
+.vær{
+  background-color: white;
+  height: 50px;
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  float: left;
+}
+
+.vær:hover {
+  opacity: 0.7;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: white;
+  margin-top: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 15px;
+  margin-left: 40px;
+  margin-right: 60px;
+}
+
+.kontaktinfo {
+  float: right;
+  justify-content: center;
+  padding-right: 30px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 1135px){
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 0.5fr;
+    grid-template-areas:
+      "logo"
+      "nav"
+      "header"
+      "img-hafjell"
+      "box-hafjell"
+      "img-hemsedal"
+      "box-hemsedal"
+      "img-trysil"
+      "box-trysil"
+      "img-tryvann"
+      "box-tryvann"
+      "footer"
+  }
+  .logo{
+    width: 200px;
+  }
+
+  #nav {
+    padding-bottom: 30px;
+  }
+
+  #nav a{
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  #header h1{
+    font-size: 20px;
+  }
+
+  #header p{
+    font-size: 15px;
+  }
+
+  #img-hafjell, #img-hemsedal, #img-trysil, #img-tryvann {
+    text-align: center;
+  }
+
+  #box-hafjell, #box-hemsedal, #box-trysil, #box-tryvann{
+    margin: auto;
+  }
+
+}
+
+@media only screen and (max-width: 636px){
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 0.5fr;
+    grid-template-areas:
+      "logo"
+      "nav"
+      "header"
+      "img-hafjell"
+      "box-hafjell"
+      "img-hemsedal"
+      "box-hemsedal"
+      "img-trysil"
+      "box-trysil"
+      "img-tryvann"
+      "box-tryvann"
+      "footer"
+  }
+  #header h1{
+    font-size: 20px;
+  }
+  #header p{
+    font-size: 15px;
+  }
+}
