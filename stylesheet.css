@@ -342,7 +342,8 @@ h2 {
 
 }
 
-@media only screen and (max-width: 636px){
+@media only screen and (max-width: 500px){
+
   .container{
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.4fr 2fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 0.5fr;
@@ -360,10 +361,8 @@ h2 {
       "box-tryvann"
       "footer"
   }
-  #header h1{
+
+  .about {
     font-size: 20px;
-  }
-  #header p{
-    font-size: 15px;
   }
 }
