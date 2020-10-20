@@ -60,12 +60,13 @@ h2 {
 
 #nav {
   grid-area: nav;
-  margin-top: 30px;
+  margin-top: 170px;
   padding: 20px;
   background-color: white;
   height: 200px;
   width: 130px;
   padding-left: 20px;
+  position: fixed;
 }
 
 #nav a{
@@ -303,28 +304,43 @@ h2 {
       "footer"
   }
   .logo{
-    width: 200px;
+    width: 300px;
+    padding-top: 10px;
+    margin: auto;
+  }
+
+  h2{
+    font-size: 50px;
   }
 
   #nav {
-    padding-bottom: 30px;
-    height: 150px;
-    margin: auto;
+    position: fixed;
+    width: 22%;
+    padding-bottom: 150px;
     margin-bottom: 20px;
+    margin-top: 150px;
   }
 
   #nav a{
-    font-size: 20px;
-    line-height: normal;
+    font-size: 40px;
+    line-height: 65px;;
     text-align: center;
   }
 
+  #header{
+    padding-top: 450px;
+    width: 700px;
+    margin: auto;
+  }
+
   #header h1{
-    font-size: 20px;
+    font-size: 40px;
+    line-height: 50px;
   }
 
   #header p{
-    font-size: 15px;
+    font-size: 30px;
+    line-height: 40px;
   }
 
   #img-hafjell, #img-hemsedal, #img-trysil, #img-tryvann {
@@ -333,10 +349,17 @@ h2 {
 
   #box-hafjell, #box-hemsedal, #box-trysil, #box-tryvann{
     margin: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
   }
 
   .about {
-    font-size: 18px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .read-more{
+    font-size: 30px;
   }
 
 }
@@ -359,19 +382,5 @@ h2 {
       "img-tryvann"
       "box-tryvann"
       "footer"
-  }
-
-  #nav {
-    grid-area: nav;
-    display: block;
-    margin-top: 50px;
-    background-color: white;
-    padding-left: 20px;
-    padding-bottom: 0px;
-    font-size: 20px;
-  }
-
-  .about {
-    font-size: 20px;
   }
 }
